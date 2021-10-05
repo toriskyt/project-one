@@ -1,0 +1,30 @@
+body {
+    background-color: gray;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    margin: 0 auto;
+    width: 60%;
+    background-color: lightgray;
+    text-align: center;
+    padding: 1%;
+    border: lightslategray;
+    
+}
+
+aside {
+    width: 25%;
+    padding-left: 15px;
+    margin-left: 10px;
+    float: center;
+    font-style: italic;
+    background-color: lightgray;
+}
+
+.tixShare {
+    color: goldenrod
+}
