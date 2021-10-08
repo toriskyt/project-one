@@ -1,6 +1,8 @@
 * {
 box-sizing: border-box;
 margin: 0;
+padding:0;
+
 }
 
 body {
@@ -55,7 +57,7 @@ aside {
     background-color: #42dde2;
     background-image: linear-gradient(
     45deg,
-    #4250ca 16.666%, 
+    #3e4fe4 16.666%, 
     #4151e1 16.666%, 
     #3772c0 33.333%, 
     #3c7da8 33.333%, 
@@ -78,7 +80,6 @@ aside {
 
 .pitt-skyline {
     border-radius: 5px;
-    
 }
 
 nav li {
@@ -101,7 +102,7 @@ li:hover {
 
 
 .btn {
-    background-color: #333;
+    background-color: rgb(49, 78, 240);
     color: white;
     padding: 5px;
     border-radius: 2px;
@@ -110,20 +111,65 @@ li:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-  
-
   }
 
   .btn:hover {
       opacity: 80%;
   }
 
-
-  @media screen and (min-width: 400px) {
-      .pitt-skyline {
-          width: 60%;
-      }
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #333;
+    color: rgb(190, 187, 187);
+    font-weight: 700;
   }
+
+
+  @media screen and (max-width: 992px) {
+      .pitt-skyline {
+          width: 80%;
+          height: 100%;
+        margin-bottom: 10px;
+
+      }
+     
+      .header-styling {
+        flex-direction: column;
+    }
+
+  }
+
+   @media screen and (max-width: 760px) {
+    .pitt-skyline {
+    width: 80%;
+    height: 100%;
+    margin-bottom: 10px;
+    }
+    
+    header {
+        flex-direction: column;
+    }
+    
+    .nav-content{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .my-logo {
+        height: 50px;
+        width: 60px;
+        
+    }
+
+    section {
+        width: 80%;
+    }
+}
+   
+
 
   @keyframes rainbow-text-simple-animation-rev {
     0% {
