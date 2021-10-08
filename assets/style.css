@@ -127,20 +127,7 @@ li:hover {
   }
 
 
-  @media screen and (max-width: 992px) {
-      .pitt-skyline {
-          width: 80%;
-          height: 100%;
-        margin-bottom: 10px;
-
-      }
-     
-      .header-styling {
-        flex-direction: column;
-    }
-
-  }
-
+ 
    @media screen and (max-width: 760px) {
     .pitt-skyline {
     width: 80%;
