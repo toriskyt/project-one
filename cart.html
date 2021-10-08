@@ -13,14 +13,39 @@
   </head>
 
   <body>
-    <section class="container">
+    <header class="header-styling">
+      <nav>
+        <a onclick= "window.location.href='index.html'">
+      <img src="./assets/images/FullLogo_Transparent_NoBuffer (1).png"  width = "70" height = "50" class = "my-logo" alt="ticket-checkmark-logo">
+      </a> 
+    </nav>
+      <h1><span class="tixShare">TixShare!</span></h1>
+     
+      <nav>
+        <ul class= "nav-content">
+          <li>
+            <a href="#">Concerts</a>
+          </li>
+          <li>
+            <a href="#">Sports</a>
+          </li>
+          <li>
+            <a href="#">Family</a>
+          </li>
+        </ul>
+      </nav>
 
-          <article class="top-line">
+    </header>
+
+  <section class="container">
+      
+          
             <h2>Cart Total (2 Items): <strong class="cart-total"></strong></h2>
-          </article>
-          <section>
-          <div>
-          <article>
+          
+          
+    
+      <section class="ticket-container">
+          <article >
               <h3>Ed Sheeran - General Admissions<br>
                 <small>Cost: $50.00/ea</small>
               </h3>
@@ -44,10 +69,11 @@
               </button>
             </article>
 
-          </div>
-        </section>
+      </section>
+          
+    
 
-          <section class="item">
+      <section class="item ticket-container">
           <div>
             <article>
               <h3>Drake - General Admissions<br><small><small>Cost: $45.00/ea</small></small></h3>
@@ -70,36 +96,44 @@
               </button>
             </article>
           </div>
-        </section>
+      </section>
 
-        <div class="totals">
+      <section class="totals ">
           <div>
-            <div>
+            <article>
               <p><strong>Order Summary</strong></p>
-            </div>
-            <div class="totals-item">
+            </article>
+
+            <article class="totals-item">
               <p>Subtotal</p>
               <p class="totals-value" id="cart-subtotal"></p>
-            </div>
-            <div class="totals-item">
+            </article>
+
+            <article class="totals-item">
               <p class="text-uppercase">Estimated Tax</p>
               <p class="totals-value" id="cart-tax"></p>
-            </div>
-            <div class="totals-item totals-item-total">
+            </article>
+
+            <article class="totals-item totals-item-total">
               <p><strong>Total</strong></p>
               <p class="totals-value cart-total"></p>
-            </div>
-          </div class="pay">
+            </article>
+
+          </div>  
+
+          <article class="pay">
           <a href="data.html" class="btn btn-pay">Pay Now <span class="totals-value cart-total"></span></a>
           <a href="data.html" class="btn btn-pay">Donate Ticket <span class="totals-value cart-total"></span></a>
-        </div>
+          </article>
 
-      </div>
-    </div><!-- container -->
+      </section>
+      
+  </section><!-- container -->
 
     <script src="assets/cartJS/cart.js">
     
     </script>
   </body>
+  <footer>Project 1 Group</footer>
 
 </html>
