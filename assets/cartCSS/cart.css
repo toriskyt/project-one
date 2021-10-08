@@ -23,6 +23,7 @@ body {
 
 .my-logo {
   float: left;
+  cursor: pointer;
 }
 
 header {
@@ -82,10 +83,8 @@ li:hover {
 
   
 h2 {
- 
   display: flex;
   justify-content: center;
-  margin:2px;
 }
 
 .ticket-group {
@@ -168,15 +167,43 @@ footer {
   header {
     flex-direction: column;
 }
+
 .nav-content{
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  margin-left: 80px;
 }
 
 .my-logo {
-  height: 50px;
-  width: 60px;
+  height: 70px;
+  width: 70px;
   
 }
+}
+
+
+@keyframes rainbow-text-simple-animation-rev {
+  0% {
+      background-size: 650%;
+  }
+  40% {
+      background-size: 650%;
+  }
+  100% {
+      background-size: 100%;
+  }
+}
+
+
+@keyframes rainbow-text-simple-animation {
+  0% {
+      background-size: 100%;
+  }
+  80% {
+      background-size: 650%;
+  }
+  100% {
+      background-size: 650%;
+  }
 }
