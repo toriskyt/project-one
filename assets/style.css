@@ -14,15 +14,63 @@ section {
     padding: 1%;
 }
 
+article {
+    padding: 20px;
+}
+
 aside {
     width: 30%;
-    padding-left: 15px;
+    padding: 10px;
+    padding-bottom: 15px;;
     margin-left: 10px;
     float: center;
     font-style: italic;
     background-color: lightgray;
+    border-radius: 5px;
+}
+.aside-section {
+    margin: 2px;
 }
 
 .tixShare {
-    color: goldenrod
+    color: goldenrod;
 }
+
+.pitt-skyline {
+    border-radius: 5px;
+    
+}
+
+nav li {
+    list-style-type: none;    
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+
+
+.btn {
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+    margin: 5px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+
+  }
+
+  .btn:hover {
+      opacity: 80%;
+  }
+
+
+  @media screen and (min-width: 400px) {
+      .pitt-skyline {
+          width: 60%;
+      }
+  }
