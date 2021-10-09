@@ -26,5 +26,6 @@ Syed Jamil/draft of template for individuals to access website and request ticke
 Yah’Mir McGee/compilation of Pittsburgh events that can be listed on the website for individuals to donate tickets
 
 **What does the functioning prototype have in features for the first week?**
+
 For the first week we have a prototype of the template where individuals can donate tickets to the pool.  
 There is a list of upcoming events and a component to indicate how many tickets will be donated.  We will eventually be upgrading the component to allow visitors to input an event, the number of tickets donated, and the eventual database that can be viewed for requests.
