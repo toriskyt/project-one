@@ -4,6 +4,9 @@ Talita Camargo, Yah’Mir McGee, Syed Jamil, Tracy Torisky
 
 Title:  TixShare
 
+![TixShare](https://user-images.githubusercontent.com/88398240/136666159-a759b247-6f56-4c1c-a226-9a575a190771.jpg)
+
+
 Description (1 paragraph):  
 This website is based on members of the Pittsburgh community coming together to donate tickets for Pittsburgh events to a pool that underserved communities can take advantage of.  Tickets to many wonderful Pittsburgh events; sports, concerts, and family-themed events should be available to many families who are experiencing diminished finances through no fault of their own.  The function of this website is to share tickets with members of their community.  TixShare is dedicated to assisting families in all that Pittsburgh has to offer as friends and neighbors who care.
 
