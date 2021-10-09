@@ -8,7 +8,7 @@ Description (1 paragraph):
 This website is based on members of the Pittsburgh community coming together to donate tickets for Pittsburgh events to a pool that underserved communities can take advantage of.  Tickets to many wonderful Pittsburgh events; sports, concerts, and family-themed events should be available to many families who are experiencing diminished finances through no fault of their own.  The function of this website is to share tickets with members of their community.  TixShare is dedicated to assisting families in all that Pittsburgh has to offer as friends and neighbors who care.
 
 APIs (Third-party):
-(Talita & Zyed - can you list what you have used so far?)
+We will be needing a centralized database.
 
 Wireframe or design for the website:
 The website was designed by Tracy Torisky and Talita Camargo
