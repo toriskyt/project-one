@@ -23,7 +23,7 @@ $(document).ready(function() {
       //calculate the subtotal based on the amount of tickets 
       
       // $(this).value();
-      // console.log(subtotal);
+      console.log(subtotal);
   
       /* Sum up row totals */
       $('.item').each(function() { 
