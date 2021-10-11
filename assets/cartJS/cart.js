@@ -97,7 +97,6 @@ function calculateTotal() {
     // get total by call each item from the list
     for (var j = 0; j < subTotal.length; j++){
       totalDue += total[j];
->>>>>>> 67e62dc1750ee8f398e5b14ef6c1064eff281c43
     }
    
    document.getElementById('cart-subtotal').innerHTML = "Item Total: $" + totalDue.toFixed(2);
