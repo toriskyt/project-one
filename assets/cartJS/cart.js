@@ -1,4 +1,4 @@
-$("<h1>")
+// $("<h1>")
 
 
 $(document).ready(function() {
@@ -23,14 +23,12 @@ $(document).ready(function() {
       //calculate the subtotal based on the amount of tickets 
       
       // $(this).value();
-      console.log(subtotal);
-      
-  
+      // console.log(subtotal);
   
       /* Sum up row totals */
       $('.item').each(function() { 
-        console.log(subtotal);
-        parseInt (subtotal += $(this).children('.product-price').text());
+        // console.log(subtotal);
+        parseFloat ( $(this).children('.product-line-price').text());
         console.log(subtotal);
       });
   
@@ -41,9 +39,9 @@ $(document).ready(function() {
   
       /* Update totals display */
       $('.totals-value').fadeOut(fadeTime, function() {
-        $('#cart-subtotal').html(subtotal);
-        $('#cart-tax').html(tax);
-        $('.cart-total').html(total);
+        $('#cart-subtotal').html(subtotal.toFixed(2));
+        $('#cart-tax').html(tax.toFixed(2));
+        $('.cart-total').html(total.toFixed(2));
         if (total == 0) {
           $('.checkout').fadeOut(fadeTime);
         } else {
@@ -57,7 +55,7 @@ $(document).ready(function() {
     function updateQuantity(quantityInput) {
       /* Calculate line price */
       var productRow = $(quantityInput).parent().parent();
-      var price = parseInt(productRow.children('.product-price').text());
+      var price = parseFloat(productRow.children('.product-price').text());
       var quantity = $(quantityInput).val();
       var linePrice = price * quantity;
   
