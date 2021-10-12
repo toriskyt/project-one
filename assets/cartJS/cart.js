@@ -1,5 +1,38 @@
 $("<h1>")
 
+// var eventName = document.getElementById("event-name");
+// var ticket = document.getElementById("num-tickets");
+// var date = document.getElementById("date");
+// var saveButton = document.getElementById("save");
+// var savedName = document.getElementById("saved-name");
+
+//saveButton.addEventListener("click", function(event) {
+//event.preventDefault();
+
+
+//var event = {
+//eventname: event.value,
+//date: date.value,
+// numTickets: numTickets.value.trim()
+// };
+// var events = JSON.parse(localStorage.getItem("events"));
+//console.log......
+// events.push(event)
+// localStorage.setItem("events", JSON.stringify(events));
+// renderMessage();
+
+// });
+
+// function renderMessage() {
+//   var lastGrade = JSON.parse(localStorage.getItem("event"));
+//   if (lastGrade !== null) {
+//     document.querySelector(".message").textContent = lastGrade.student + 
+//     " received a/an " + lastGrade.grade
+//   }
+// }
+1. GET INSIDE LOCAL STORAGE AND SAV INTO EMPTY VAR ( AN ARRAY OF OBJECTS WHIXH IS YOUR TICKETS.)
+2.PUSH NEW TIOCKET TO ARRAY WITH OLD TICKETS. AFTER THAT, TAKE ARRAY AND SAVE INTO LOCAL STORAGE (THE ARRAY).
+
 
 $(document).ready(function() {
 
