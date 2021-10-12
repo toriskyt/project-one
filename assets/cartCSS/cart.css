@@ -5,14 +5,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 html {
     --secondary-color:#222;
     --tertiary-color:#333;
     --light-color: #fff;
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
 }
-
 body {
   background-image: linear-gradient(to top , rgba(0, 0, 0, 0.075), rgba(111, 213, 231, 0.753)) ;
     font-family: 'Nunito', sans-serif;
@@ -20,45 +18,39 @@ body {
     color: var(--light-color);
     line-height: 1.6;
 }
-
 .my-logo {
   float: left;
   cursor: pointer;
 }
-
 header {
   padding: 30px;
   background-color: #333;
   margin-bottom: 20px;
   color: rgb(190, 187, 187);
   }
-
-
 h1 {
     text-align: center;
   }
-  
   .tixShare {
-    background-color: #42dde2;
+    background-color: #42DDE2;
     background-image: linear-gradient(
     45deg,
-    #3e4fe4 16.666%, 
-    #4151e1 16.666%, 
-    #3772c0 33.333%, 
-    #3c7da8 33.333%, 
-    #45bac2 50%, 
-    #60c2bd 50%, 
-    #64e0d6 66.666%, 
-    #57eec1 66.666%, 
-    #6bf3a8 83.333%, 
-    #45e0b9 83.333%);
+    #3E4FE4 16.666%,
+    #4151E1 16.666%,
+    #3772C0 33.333%,
+    #3C7DA8 33.333%,
+    #45BAC2 50%,
+    #60C2BD 50%,
+    #64E0D6 66.666%,
+    #57EEC1 66.666%,
+    #6BF3A8 83.333%,
+    #45E0B9 83.333%);
     background-size: 100%;
     background-repeat: repeat;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
     animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
 }
-     
 nav li {
   list-style-type: none;    
   display: inline;
@@ -66,42 +58,33 @@ nav li {
   margin-right: 30px;
   text-decoration: none;
 }
-
 a {
   text-decoration: none;
   color:rgb(190, 187, 187);
   font-weight: 700;
 }
-
 li:hover {
   opacity:80%;
 }
-
 .tixShare:hover{
     animation: rainbow-text-simple-animation 0.5s ease-in forwards;
 }
-
-  
 h2 {
   display: flex;
   justify-content: center;
 }
-
 .ticket-group {
   display: block;
 }
-
 #card-info {
   display: block;
   margin-left: 55px;
-} 
-
+}
 .form-control {
   padding: 5px;
   width: 30%;
   margin:7px;
 }
-
 button {
   padding:10px;
   background-color:rgb(49, 78, 240);
@@ -110,14 +93,11 @@ button {
   font-weight: 700;
   font-size: 15px;
 }
-
-
 #adult-quantity {
   width: 3%;
   font-weight:500;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
 section {
   background-color: white;
   color: black;
@@ -128,20 +108,15 @@ section {
   border-radius: 5px;
   box-shadow:1px 2px 6px;
 }
-
 .ticket-container {
   margin-bottom: 7px;
   margin-top: 7px;
 }
-
-
 article {
   padding:10px;
   background-color: rgb(207, 207, 207);
   border-radius: 2px;
-  
 }
-
 .btn {
   background-color: rgb(49, 78, 240);
   color: white;
@@ -150,7 +125,6 @@ article {
   text-decoration: none;
   margin: 5px;
 }
-
 footer {
   display: flex;
   justify-content: center;
@@ -160,29 +134,21 @@ footer {
   font-weight: 700;
   margin-top: 20px;
 }
-
-
-
 @media screen and (max-width: 760px) {
   header {
     flex-direction: column;
 }
-
 .nav-content{
   display: flex;
   justify-content: center;
   margin-top: 10px;
   margin-left: 80px;
 }
-
 .my-logo {
   height: 70px;
   width: 70px;
-  
 }
 }
-
-
 @keyframes rainbow-text-simple-animation-rev {
   0% {
       background-size: 650%;
@@ -194,8 +160,6 @@ footer {
       background-size: 100%;
   }
 }
-
-
 @keyframes rainbow-text-simple-animation {
   0% {
       background-size: 100%;
@@ -207,3 +171,8 @@ footer {
       background-size: 650%;
   }
 }
+
+
+
+
+
