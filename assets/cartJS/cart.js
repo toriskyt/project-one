@@ -78,7 +78,11 @@
 //         productRow.remove();
 //         recalculateCart();
 //       });
-// =======
+
+
+
+
+
 function calculateTotal() {
   // assign each value by id 
  var item = [ Number(document.getElementById('50.00').value),
