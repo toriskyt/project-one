@@ -21,6 +21,10 @@ display: inline-block;
 
 }
 
+img {
+  border-radius: 4px;
+}
+
 header {
 padding: 30px;
 background-color: #333;
@@ -126,7 +130,8 @@ aside {
     #45e0b9 83.333%);
     background-size: 100%;
     background-repeat: repeat;
-    /* -webkit-background-clip: text; */
+    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent; 
     animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
 }
