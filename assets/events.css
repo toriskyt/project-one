@@ -6,3 +6,8 @@ body{
     float: left;
     margin-right: 25px;
 }
+
+li{
+font-weight: bold;
+color:red
+}
