@@ -1,7 +1,10 @@
 Project One Proposal:  
 Talita Camargo, Yah’Mir McGee, Syed Jamil, Tracy Torisky
 
-**Deployed URL: https://taliitacamargo.github.io/project-one/index.html
+**Deployed URL: 
+
+https://taliitacamargo.github.io/project-one/index.html
+
 **Title:  TixShare**
 ![TixShare landing page](https://user-images.githubusercontent.com/88398240/137183354-fe696c67-79a6-4252-a9d7-634baf093e97.jpg)
 
