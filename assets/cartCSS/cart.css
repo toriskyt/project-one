@@ -111,12 +111,10 @@ button {
   font-size: 15px;
 }
 
-
-#adult-quantity {
-  width: 3%;
-  font-weight:500;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.btn:hover {
+  opacity: 80%;
 }
+
 
 section {
   background-color: white;
@@ -151,6 +149,8 @@ article {
   margin: 5px;
 }
 
+
+
 footer {
   display: flex;
   justify-content: center;
@@ -160,6 +160,8 @@ footer {
   font-weight: 700;
   margin-top: 20px;
 }
+
+
 
 
 
