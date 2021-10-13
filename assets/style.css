@@ -127,6 +127,7 @@ aside {
     background-size: 100%;
     background-repeat: repeat;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent; 
     animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
 }
