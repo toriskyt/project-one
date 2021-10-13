@@ -31,8 +31,8 @@
 //     " received a/an " + lastGrade.grade
 //   }
 // }
-1. GET INSIDE LOCAL STORAGE AND SAV INTO EMPTY VAR ( AN ARRAY OF OBJECTS WHIXH IS YOUR TICKETS.)
-2.PUSH NEW TIOCKET TO ARRAY WITH OLD TICKETS. AFTER THAT, TAKE ARRAY AND SAVE INTO LOCAL STORAGE (THE ARRAY).
+// 1. GET INSIDE LOCAL STORAGE AND SAV INTO EMPTY VAR ( AN ARRAY OF OBJECTS WHIXH IS YOUR TICKETS.)
+// 2.PUSH NEW TIOCKET TO ARRAY WITH OLD TICKETS. AFTER THAT, TAKE ARRAY AND SAVE INTO LOCAL STORAGE (THE ARRAY).
 
 
 // $(document).ready(function() {
@@ -111,9 +111,6 @@
 //         productRow.remove();
 //         recalculateCart();
 //       });
-
-
-
 
 
 function calculateTotal() {
