@@ -3,7 +3,7 @@ Talita Camargo, Yah’Mir McGee, Syed Jamil, Tracy Torisky
 
 
 **Title:  TixShare**
-![TixShare](https://user-images.githubusercontent.com/88398240/136666159-a759b247-6f56-4c1c-a226-9a575a190771.jpg)
+![TixShare landing page.pdf](https://github.com/toriskyt/project-one/files/7340204/TixShare.landing.page.pdf)
 
 **Description (1 paragraph):**
 
