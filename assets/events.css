@@ -1,13 +1,19 @@
 body{
-    background-color: white;
+    background-color: rgb(70, 100, 182);
 }
 
-.float-left{
-    float: left;
-    margin-right: 25px;
-}
 
-li{
-font-weight: bold;
-color:red
-}
+
+a:link, a:visited {
+    background-color: rgb(25, 40, 122);
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: red;
+  }
+  
