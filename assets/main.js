@@ -1,7 +1,7 @@
 function openNav() {
     document.getElementById("mySidenav").style.width = "100%";
   }
-  
+
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
@@ -29,7 +29,7 @@ function openNav() {
 
   var slideIndex = 0;
   showSlides();
-  
+
   function showSlides() {
     var i;
     var slides = document.getElementsByClassName("mySlides");
@@ -44,5 +44,5 @@ function openNav() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 4000); // Change image every 2 seconds
-  }
+    setTimeout(showSlides, 4000)
+};
