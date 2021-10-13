@@ -67,9 +67,15 @@ a {
   color:rgb(27, 2, 2);
   font-weight: 700;
 }
+
 h3 {
   color: black;
 }
+
+.kids-day:hover {
+  opacity: 80%
+}
+
 li:hover {
   opacity:80%;
 }
@@ -80,18 +86,22 @@ h2 {
   display: flex;
   justify-content: center;
 }
+
 .ticket-group {
   display: block;
 }
+
 #card-info {
   display: block;
   margin-left: 55px;
 }
+
 .form-control {
   padding: 5px;
   width: 30%;
   margin:7px;
 }
+
 button {
   padding:10px;
   background-color:rgb(49, 78, 240);
