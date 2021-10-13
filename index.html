@@ -1,3 +1,4 @@
+
 <!DOCTYPE html> 
 
 <html>
@@ -7,6 +8,9 @@
     <title>TixShare</title>
     <link rel="stylesheet" href="assets/style.css">
     <link rel="icon" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" ></script>
+    
 </head>
 
 <body>
@@ -17,19 +21,27 @@
         
       <h1>Welcome to <span class="tixShare">TixShare</span>!</h1>
      
-      <nav>
-        <ul class= "nav-content">
+  
+        <nav id="mySidenav" class="sidenav">
+          <ul>
           <li>
-            <a onclick= "window.location.href='concerts.html'">Concerts</a>
-          </li>
-          <li>
-            <a onclick= "window.location.href='sports.html'">Sports</a>
-          </li>
-          <li>
-            <a onclick= "window.location.href='familyevents.html'">Family</a>
-          </li>
-        </ul>
-      </nav>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        </li>
+        <li>
+          <a class= "iframe1">Family<iframe id="frame1" style="display: none;" width="1330" height="515" src="family.html" frameborder="0" scrolling="auto"></iframe></a>
+        </li>
+        <li>
+          <a class= "iframe2">Concerts<iframe id="frame2" style="display: none;" width="1330" height="515" src="" frameborder="0" scrolling="auto"></iframe></a>
+        </li>
+        <li>
+          <a class= "iframe3">Sports<iframe id="frame3" style="display: none;" width="1330" height="515" src="" frameborder="0" scrolling="auto"></iframe></a>
+        </li>
+        <li>
+          <a class= "iframe4">Cart<iframe id="frame4" style="display: none;" width="1330" height="515" src="cart.html" frameborder="0" scrolling="auto"></iframe></a>
+        </li>
+      </ul>
+        </nav>
+        <span  class = "nav-hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
     </header>
 
@@ -42,9 +54,37 @@
         <p>TixShare is made up of a committed network of community members who want to share those events with others, regardless of the ability to purchase tickets on their own</p>
 
     </article>
-
+    
+    <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+     
+      <img src= "assets/images/11-HS-stlouis-jpg-1633637327.jpeg" style= "width:60%" height="350">
+      <div class="text">Harry Styles - PPG Arena</div>
+    </div>
+    
+    <div class="mySlides fade">
+ 
+      <img src="assets/images/lrg_dbp03273-e1560957641279.jpeg" style= "width:60%" height="350">
+      <div class="text">Billie Ellish - World Tour</div>
+    </div>
+    
+    <div class="mySlides fade">
+    
+      <img src="assets/images/gun (1).jpeg" style= "width:60%" height="350">
+      <div class="text">Gun Show</div>
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
    
-        <img class="pitt-skyline" src= "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.hZUPbAPEh0Df9zFjw_c0pQHaEJ%26pid%3DApi&f=1">
+        <!-- <img class="pitt-skyline" src= "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.hZUPbAPEh0Df9zFjw_c0pQHaEJ%26pid%3DApi&f=1"> -->
    
 <!-- <nav>
     <ul>
@@ -61,21 +101,17 @@
   </nav> -->
 
 </section>
-    <span class= "aside-section">
-    <aside>
-        <h1>See what tickets are available.</h1>
-       
-        <a  href="#" class="btn"><span>See Tickets</span></a>
-    </aside>
-  </span>
+  
   <span class= "aside-section">
     <aside>
         <h2 class="cart">A small act of kindness goes a long way.</h2>
 
-        <a  href="./cart.html" class="btn"><span>Donate Tickets</span></a>
+        <a  href="./cart.html" class="btn"><span>Cart</span></a>
     </aside>
   </span>
+  
 
+<script src="./assets/main.js"></script>
 
 </body>
 
