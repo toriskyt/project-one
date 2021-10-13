@@ -48,7 +48,8 @@ h1 {
     background-size: 100%;
     background-repeat: repeat;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
     animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
 }
 nav li {
@@ -64,7 +65,7 @@ a {
   font-weight: 700;
 }
 h3 {
-  text: black;
+  color: black;
 }
 li:hover {
   opacity:80%;
@@ -96,11 +97,12 @@ button {
   font-weight: 700;
   font-size: 15px;
 }
-#adult-quantity {
-  width: 3%;
-  font-weight:500;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+.btn:hover {
+  opacity: 80%;
 }
+
+
 section {
   background-color: white;
   color: black;
@@ -128,6 +130,9 @@ article {
   text-decoration: none;
   margin: 5px;
 }
+
+
+
 footer {
   display: flex;
   justify-content: center;
@@ -137,6 +142,11 @@ footer {
   font-weight: 700;
   margin-top: 20px;
 }
+
+
+
+
+
 @media screen and (max-width: 760px) {
   header {
     flex-direction: column;
