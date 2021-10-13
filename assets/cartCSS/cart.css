@@ -11,6 +11,7 @@ html {
     --light-color: #fff;
     scroll-behavior: smooth;
 }
+
 body {
   background-image: linear-gradient(to top , rgba(0, 0, 0, 0.075), rgba(111, 213, 231, 0.753)) ;
     font-family: 'Nunito', sans-serif;
@@ -22,12 +23,14 @@ body {
   float: left;
   cursor: pointer;
 }
+
 header {
   padding: 30px;
   background-color: #333;
   margin-bottom: 20px;
   color: rgb(190, 187, 187);
   }
+
 h1 {
     text-align: center;
   }
@@ -117,11 +120,13 @@ section {
   margin-bottom: 7px;
   margin-top: 7px;
 }
+
 article {
   padding:10px;
   background-color: rgb(207, 207, 207);
   border-radius: 2px;
 }
+
 .btn {
   background-color: rgb(49, 78, 240);
   color: white;
