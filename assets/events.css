@@ -2,12 +2,12 @@ body{
     background-color: rgb(70, 100, 182);
 }
 
-img{
+/* img{
     padding: 15px 50px 15px 0px;  
     display: flex;
     max-width: 800px;
     float: left;
-}
+} */
 
 a:link, a:visited {
     background-color: rgb(25, 40, 122);
@@ -30,6 +30,6 @@ a:link, a:visited {
     padding: 10px;
   }
 
-li {
+/* li {
   padding: 35px;
-}
+} */
