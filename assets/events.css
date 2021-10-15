@@ -17,8 +17,7 @@ body{
   /* mix-blend-mode: multiply; */
   /* mix-blend-mode: overlay; */
   /* mix-blend-mode: normal; */
- 
-}
+
 
 img{
     padding: 15px 50px 15px 0px;  
@@ -26,6 +25,9 @@ img{
     max-width: 800px;
     float: left;
 }
+
+
+
 
 a:link, a:visited {
     background-color: rgb(25, 40, 122);
