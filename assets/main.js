@@ -46,3 +46,5 @@ function openNav() {
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 4000)
 };
+
+fetch
