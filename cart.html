@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="./assets/cartCSS/cart.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Dynamically change your shopping cart total</title>
   </head>
 
@@ -39,10 +38,13 @@
 </header>
 
 
-<main class="container">
-            <h2>Cart Total (2 Items): <strong class="cart-total"></strong></h2>
-      
-  <section class="ticket-container">
+
+
+
+<main class="cart-container content-section">
+
+  <section class="ticket-container item ">
+
       <article>
         <h3>Ed Sheeran - General Admissions<br>
         <small>Cost: $50.00/ea</small>
@@ -50,6 +52,7 @@
       </article>
             
       <div class="product-price" style= display:none;>50</div>
+
       <article class="pass-quantity">
         <label for="pass-quantity" class="pass-quantity">Quantity</label>
         <input class="form-control" type="number" value="1" min="1">
@@ -61,7 +64,7 @@
       </article>
 
       <article class="remove-item">
-        <button class="remove-product">
+        <button type= "button" class="remove-product">
         Delete
         </button>
       </article>
@@ -87,7 +90,7 @@
       </article>
 
       <article class="remove-item">
-        <button class="remove-product">
+        <button  type= "button" class="remove-product">
         Delete
         </button>
       </article>
@@ -95,7 +98,7 @@
       </div>
   </section>
 
-  <section class="totals ">
+  <section class="totals">
       <div>
             
       <article>
@@ -104,11 +107,11 @@
 
       <article class="totals-item">
         <p>Subtotal</p>
-        <p class="totals-value" id="cart-subtotal"></p>
+        <p class="totals-value" id="cart-subtotal">0</p>
       </article>
 
       <article class="totals-item">
-        <p class="text-uppercase">Estimated Tax</p>
+        <p>Estimated Tax</p>
         <p class="totals-value" id="cart-tax"></p>
       </article>
 
@@ -127,8 +130,8 @@
 </main><!-- container -->
 
 
-    <script src="assets/cartJS/cart.js"></script>
-    <script src= "assets/main.js"></script>
+    
+<script src="assets/cartJS/cart2.js"></script>
    </body>
 
   <footer>Project 1 Group</footer>
