@@ -46,5 +46,39 @@ function openNav() {
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 4000)
 };
+var getHolidays = function () {
+  var apiUrl = 'https://calendarific.com/api/v2/holidays?api_key=f4023e86e7bcf08b446daeeee7c4c8dcdc4897a8&country=US&year=2021';
+  console.log(apiUrl);
 
-fetch
+  fetch(apiUrl)
+    .then(function (response) {
+      if (response.ok) {
+        response.json().then(function (data) {
+          console.log(data);
+          displayHolidays(data,);
+          // displayRepos([], user);
+        });
+      } else {
+        alert('Error: ' + response.statusText);
+      }
+    })
+    .catch(function (error) {
+      alert('Unable to connect to GitHub');
+    });
+};
+$( function() {$( "#dialog" ).dialog();
+  $( "#dialog" ).dialog("close");
+  $ ("#modalButton").on("click",function(){
+    $( "#dialog" ).dialog("open");
+    getHolidays();
+  })
+} );
+var displayHolidays=function(data){
+  for(var i=0;i<data.response.holidays.length; i++){
+    var holiday= data.response.holidays[i]
+    console.log(holiday);
+  }
+}
+var createHoliday= document.createElement("ul");
+btn.innerHTML = "CLICK ME"; 
+createHoliday.appendChild("#dialog");
