@@ -26,6 +26,7 @@ function openNav() {
       $("#frame4").toggle();
     });
   });
+  
 
   var slideIndex = 0;
   showSlides();
@@ -46,3 +47,5 @@ function openNav() {
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 4000)
 };
+
+
