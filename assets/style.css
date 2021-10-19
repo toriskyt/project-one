@@ -175,13 +175,16 @@ img {
 /* ____________ASIDE__________ */
 
 aside {
-    width: 30%;
-    padding-top: 0px;
+    width: 300px;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left:  10px;
     background-color: transparent;
     border-radius: 5px;
     box-shadow:1px 2px 6px;
     display: inline-block;
+    font-size: 10px;
 }
 
 
