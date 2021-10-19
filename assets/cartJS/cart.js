@@ -1,38 +1,102 @@
-// <<<<<<< HEAD
-// // $("<h1>")
+var addTicket = document.querySelector("#addTicket");
+var cart = document.querySelector("#cart")
+ 
 
-// var eventName = document.getElementById("event-name");
-// var ticket = document.getElementById("num-tickets");
-// var date = document.getElementById("date");
-// var saveButton = document.getElementById("save");
-// var savedName = document.getElementById("saved-name");
-
-//saveButton.addEventListener("click", function(event) {
-//event.preventDefault();
+function newTicket() {
+  // ticket section
+  var ticketCon = document.createElement("section");
+  ticketCon.setAttribute("class", "ticket-container item");
+  cart.prepend(ticketCon);
 
 
-// var event = {
-// eventname: event.value,
-// date: date.value,
-// numTickets: numTickets.value.trim()
-// };
-// var events = JSON.parse(localStorage.getItem("events"));
-// console.log......
-// events.push(event)
-// localStorage.setItem("events", JSON.stringify(events));
-// renderMessage();
 
-// });
+  // event name section
+  var eventNameArticle = document.createElement("article")
+  eventNameArticle.setAttribute("class", "event-name");
 
-// function renderMessage() {
-//   var lastGrade = JSON.parse(localStorage.getItem("event"));
-//   if (lastGrade !== null) {
-//     document.querySelector(".message").textContent = lastGrade.student + 
-//     " received a/an " + lastGrade.grade
-//   }
-// }
-// 1. GET INSIDE LOCAL STORAGE AND SAV INTO EMPTY VAR ( AN ARRAY OF OBJECTS WHIXH IS YOUR TICKETS.)
-// 2.PUSH NEW TIOCKET TO ARRAY WITH OLD TICKETS. AFTER THAT, TAKE ARRAY AND SAVE INTO LOCAL STORAGE (THE ARRAY).
+
+  ticketCon.append(eventNameArticle);
+  
+  // number of tickets section
+  var quantityArticle = document.createElement("article")
+  quantityArticle.setAttribute("class", "pass-quantity");
+  ticketCon.append(quantityArticle);
+
+  // date section
+  var dateArticle = document.createElement("article");
+  dateArticle.setAttribute("class", "event-date");
+  ticketCon.append(dateArticle);
+
+  var removeBtnArticle = document.createElement("article");
+  removeBtnArticle.setAttribute("class", "remove-item");
+  ticketCon.append(removeBtnArticle);
+
+
+  // event name label
+  var nameLabel = document.createElement("label");
+  nameLabel.setAttribute("for", "name-field");
+  nameLabel.innerHTML= "Enter Event Name";
+  eventNameArticle.append(nameLabel); 
+
+  // event name input
+  var NameInput = document.createElement("input");
+  NameInput.setAttribute("type", "text");
+  NameInput.setAttribute("class", "form-control name-field");
+  eventNameArticle.append(NameInput); 
+
+  // event cost label
+  var breakEl = document.createElement("br");
+    eventNameArticle.append(breakEl);
+  var costLabel = document.createElement("label");
+  costLabel.setAttribute("for", "cost-field");
+  costLabel.innerHTML= "Enter Event Cost";
+  eventNameArticle.append(costLabel); 
+
+  // event cost input
+  var costInput = document.createElement("input");
+  costInput.setAttribute("value", "0.00");
+  costInput.setAttribute("type", "number");
+  costInput.setAttribute("class", "form-control cost-field");
+  eventNameArticle.append(costInput);
+
+    // number of tickets label
+    var quantityLabel = document.createElement("label");
+    quantityLabel.setAttribute("for", "pass-field");
+    quantityArticle.innerHTML= "Ticket Quantity";
+    quantityArticle.append(quantityLabel); 
+
+    // number of tickets input
+    var ticketsInput = document.createElement("input");
+    ticketsInput.setAttribute("min", "");
+    ticketsInput.setAttribute("value", "0");
+    ticketsInput.setAttribute("type", "number");
+    ticketsInput.setAttribute("class", "form-control quantity-field");
+    quantityArticle.append(ticketsInput);
+
+    // event date label
+    var eventDate = document.createElement("label");
+    eventDate.setAttribute("for", "event-day");
+    dateArticle.innerHTML= "Event Date:";
+    dateArticle.append(eventDate); 
+
+    // event date input
+    var breakEl = document.createElement("br");
+    dateArticle.append(breakEl);
+    var dateInput = document.createElement("input");
+    dateInput.setAttribute("type", "date");
+    dateInput.setAttribute("class", "form-control date-field");
+    dateArticle.append(dateInput);
+
+    // delete button 
+    var deleteBtn =  document.createElement("button");
+    deleteBtn.setAttribute("type", "button");
+    deleteBtn.setAttribute("class", "remove-item");
+    deleteBtn.innerHTML= "Delete";
+    removeBtnArticle.append(deleteBtn);
+}
+
+addTicket.addEventListener('click', newTicket);
+
 
 
 var ticket = document.querySelector("#purchase");
@@ -56,132 +120,7 @@ function addToCart (event){
     localStorage.setItem("events", JSON.stringify(events));
   }
 
-
-  
-  
-  renderMessage();
-
-  
-
-// 
-
-
-
-
-
-
-
-// $(document).ready(function() {
-//     /* Set rates + misc */
-//     var taxRate = 0.06;
-//     var fadeTime = 300;
-  
-//     $('.pass-quantity input').change(function() {
-//       updateQuantity(this);
-//     });
-  
-//     $('.remove-item button').click(function() {
-//       removeItem(this);
-
-//     });
-  
-  
-//     /* Recalculate cart */
-//     function recalculateCart() {
-//       var subtotal = 0; //need to find a way to select the product price and 
-//       //calculate the subtotal based on the amount of tickets 
-      
-//       // $(this).value();
-//       console.log(subtotal);
-  
-//       /* Sum up row totals */
-//       $('.item').each(function() { 
-//         // console.log(subtotal);
-//         parseFloat ( $(this).children('.product-line-price').text());
-//         console.log(subtotal);
-//       });
-  
-//       /* Calculate totals */
-//       var tax = subtotal * taxRate;
-//       var total = subtotal + tax;
-//       console.log(total);
-  
-//       /* Update totals display */
-//       $('.totals-value').fadeOut(fadeTime, function() {
-//         $('#cart-subtotal').html(subtotal.toFixed(2));
-//         $('#cart-tax').html(tax.toFixed(2));
-//         $('.cart-total').html(total.toFixed(2));
-//         if (total == 0) {
-//           $('.checkout').fadeOut(fadeTime);
-//         } else {
-//           $('.checkout').fadeIn(fadeTime);
-//         }
-//         $('.totals-value').fadeIn(fadeTime);
-//       });
-//     }
-  
-//     /* Update quantity */
-//     function updateQuantity(quantityInput) {
-//       /* Calculate line price */
-//       var productRow = $(quantityInput).parent().parent();
-//       var price = parseFloat(productRow.children('.product-price').text());
-//       var quantity = $(quantityInput).val();
-//       var linePrice = price * quantity;
-  
-//       /* Update line price display and recalc cart totals */
-//       productRow.children('.product-line-price').each(function() {
-//         $(this).fadeOut(fadeTime, function() {
-//           $(this).text(linePrice.toFixed(2));
-//           recalculateCart();
-//           $(this).fadeIn(fadeTime);
-//         });
-//       });
-//     }
-  
-//     /* Remove item from cart */
-//     function removeItem(removeButton) {
-//       /* Remove row from DOM and recalc cart total */
-//       var productRow = $(removeButton).parent().parent();
-//       productRow.slideUp(fadeTime, function() {
-//         productRow.remove();
-//         recalculateCart();
-//       })}});
-
-
-//       function calculateTotal() {
-//   // assign each value by id 
-//  var item = [ Number(document.getElementById('product-price').value),
-//               ,
-//               Number(document.getElementById('product-price').value)];
-//   // Multiply each input and add it to the value
-//   var subTotal = [ document.getElementById('product-line-price').value * 50,
-//                 ,
-//                 document.getElementById('product-line-price').value * 45];
-//   // declare 
-//   var totalDue = 0;
-
-//   // loop through each item and add to the list item 
-//   for (var i = 0; i < item.length; i++){
-//       countItem += item[i];
-//   }
-
-//     // get total by call each item from the list
-//     for (var j = 0; j < subTotal.length; j++){
-//       totalDue += total[j];
-//     }
-   
-//    document.getElementById('cart-subtotal').innerHTML = "Item Total: $" + totalDue.toFixed(2);
-//     }
-
-var removeCartItemBtn = document.getElementsByClassName('remove-product')
-console.log(removeCartItemBtn);
-for (var i = 0; i < removeCartItemBtn.lenght; i++){ 
-  var button = removeCartItemBtn[i]
-  button.addEventListener('click', function(event) {
-  var removeButtonClicked = event.target;
-  removeButtonClicked.parentElement.parentElement.remove()
-  
-  })
+  // renderMessage();
 
 }
-}
+

@@ -99,7 +99,7 @@ color: rgb(190, 187, 187);
 
 body {
   font-family: 'Nunito', sans-serif;
-  background-image: linear-gradient(to top , rgba(0, 0, 0, 0.075), rgba(111, 213, 231, 0.753)) ;
+  background-image: linear-gradient(to top , rgba(0, 0, 0, 0.466), rgba(0, 4, 5, 0.808)) ;
   font-size: 1rem;
   color: var(--light-color);
   line-height: 1.6;
@@ -187,10 +187,23 @@ aside {
 
 /* _________EL'S USED ELSEWHERE_________  */
 
-a {
+a,
+button {
     text-decoration: none;
     color:rgb(190, 187, 187);
     font-weight: 700;
+}
+
+button {
+  background-color: rgb(49, 78, 240);
+    color: white;
+    padding: 10px;
+    border-radius: 2px;
+    margin: 5px;
+    text-decoration: none;
+    border: none;
+    
+    
 }
 
 
@@ -206,6 +219,7 @@ a {
     align-items: center;
   }
 
+  button:hover,
   .btn:hover {
       opacity: 80%;
   }
@@ -263,9 +277,21 @@ a {
         
     }
 
-    section {
+    main  {
         width: 80%;
+        text-align: center;
     }
+    
+    .mySlides,
+    .slide-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      }
+
+      .dot {
+        
+      }
   
 }
 
@@ -288,7 +314,7 @@ a {
       
   }
 
-  section {
+  main {
       width: 80%;
       text-align: center;
   }
@@ -296,6 +322,7 @@ a {
   .mySlides,
   .slide-img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
     }
 
