@@ -11,13 +11,13 @@
 //event.preventDefault();
 
 
-//var event = {
-//eventname: event.value,
-//date: date.value,
+// var event = {
+// eventname: event.value,
+// date: date.value,
 // numTickets: numTickets.value.trim()
 // };
 // var events = JSON.parse(localStorage.getItem("events"));
-//console.log......
+// console.log......
 // events.push(event)
 // localStorage.setItem("events", JSON.stringify(events));
 // renderMessage();
@@ -35,8 +35,38 @@
 // 2.PUSH NEW TIOCKET TO ARRAY WITH OLD TICKETS. AFTER THAT, TAKE ARRAY AND SAVE INTO LOCAL STORAGE (THE ARRAY).
 
 
-// $(document).ready(function() {
 
+function addToCart () {
+
+  var date = document.querySelector("#datepickerDrake");
+  var ticket = document.querySelector("#purchase");
+  var valueNumTickets = document.querySelector("#quantityDrake");
+
+  ticket.addEventListener('click', function(event) {
+  
+  var concert = {
+    eventName: ticket.value,
+    eventDate: date.value,
+    valueNumTickets : numTickets.value.trim()
+  };
+
+  var events = JSON.parse(localStorage.getItem("events"))||[];
+  events.push(concert)
+  localStorage.setItem("events", JSON.stringify(events));
+  renderMessage();
+  
+ });
+  
+
+// 
+
+
+
+
+
+
+
+// $(document).ready(function() {
 //     /* Set rates + misc */
 //     var taxRate = 0.06;
 //     var fadeTime = 300;
@@ -143,13 +173,10 @@ console.log(removeCartItemBtn);
 for (var i = 0; i < removeCartItemBtn.lenght; i++){ 
   var button = removeCartItemBtn[i]
   button.addEventListener('click', function(event) {
-  var removeButtonClicked = event.target
+  var removeButtonClicked = event.target;
   removeButtonClicked.parentElement.parentElement.remove()
   
   })
 
 }
-
-
-
-
+}

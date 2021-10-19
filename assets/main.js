@@ -71,7 +71,7 @@ var getHolidays = function () {
       alert('Unable to connect to GitHub');
     });
 };
-var modalButton = document.getElementById("modalButton");
+
 
 $( function() {$( "#dialog" ).dialog();
   $( "#dialog" ).dialog("close");
@@ -83,29 +83,35 @@ $( function() {$( "#dialog" ).dialog();
 
 var displayHolidays=function(data){
   
-  for(var i=0;i<data.response.holidays.length; i++){
-    var holiday= data.response.holidays[i]
-    console.log(holiday);
+  for(var i = 0; i < data.response.holidays.length; i++){
+    var holiday = data.response.holidays[i];
+    console.log(holiday); 
 
     var body = document.getElementById("dialog");
-
     var listEl = document.createElement("ol");
+    
     // Create ordered list items
     var li1 = document.createElement("li");
+   
     var li2 = document.createElement("li");
-    
-    li1.textContent = "Hi";
-    li2.textContent = "How are you ";
+    var p1 = document.createElement("p");
+    // var p2 = document.createElement("p");
 
-    // //   li1.textContent = holiday.data[i].name;
-    // li2.textContent = holiday.data[i].date;
+    li1.setAttribute('id','holiday-list');
+    li2.setAttribute('id','holiday-list');
+    
+    
+    li1.textContent = (data.response.holidays[i].name );
+    li2.textContent = data.response.holidays[i].date.iso;
+    p1.textContent = "Ring in the New Year Party"
+
     
     body.appendChild(listEl);
     listEl.appendChild(li1);
     listEl.appendChild(li2);
+    li1.appendChild(p1)
 
-
-  
+    break;
    
 
 
@@ -114,7 +120,7 @@ var displayHolidays=function(data){
 }
 
 
-modalButton.addEventListener('click', displayHolidays);
+
 
 // var createList = document.createElement("li");
 // createList.innerHTML = displayHolidays; 
