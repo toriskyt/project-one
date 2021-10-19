@@ -41,11 +41,42 @@
 
 
 
+
 <main>
 <div  id = "cart" class="cart-container content-section">
 <!-- javascript tickets go here -->
 </div>
  
+
+
+  <section class="item ticket-container">
+    <div>
+
+      <article>
+        <label>Enter Event Name</label>
+        <input class="form-control name-field" type="text" value=""><br>
+        <label>Enter Event Cost</label>
+        <input class="form-control cost-field" type="text" value="0.00"><br>
+      </article>
+
+      <article class="pass-quantity">
+        <label for="pass-quantity" class="pass-quantity">Number of Tickets</label>
+        <input class="form-control quantity-field" type="number" value="1" min="1">
+      </article>
+
+    <article>
+    <label for="event-day">Event Date:</label>
+    <input type="date" class= "form-control" id= "datepickerDrake">
+  </article>
+  
+    <article class="remove-item">
+      <button  type= "button" class="remove-product">
+      Delete
+      </button>
+    </article>
+
+    </div>
+</section>
 
   <section class="totals">
       <div>
@@ -84,7 +115,8 @@
 
 <script src="./assets/cartJS/cart.js"></script>    
 
-   </body>
+
+  </body>
 
   <footer>Project 1 Group Members: Talita Camargo, Syed Jamil, Yah'Mir McGee, Tracy Torisky</footer>
 </html>
