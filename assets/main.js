@@ -77,6 +77,7 @@ var displayHolidays=function(data){
   for(var i=0;i<data.response.holidays.length; i++){
     var holiday= data.response.holidays[i]
     console.log(holiday);
+    
   }
 }
 var createHoliday= document.createElement("ul");
