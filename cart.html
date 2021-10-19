@@ -63,6 +63,11 @@
         </span>
       </article>
 
+      <article>
+      <label for="event-day">Event Date:</label>
+      <input type="date" class= "form-control" id= "datepicker">
+      </article>
+
       <article class="remove-item">
         <button type= "button" class="remove-product">
         Delete
@@ -82,13 +87,18 @@
             
       <article class="pass-quantity">
         <label for="pass-quantity" class="pass-quantity">Quantity</label>
-        <input class="form-control" type="number" value="1" min="1">
+        <input id="quantityDrake" class="form-control" type="number" value="1" min="1">
       </article>
 
       <article class="product-line-price">
         <span class="product-line-price">45.00</span>
       </article>
 
+      <article>
+      <label for="event-day">Event Date:</label>
+      <input type="date" class= "form-control" id= "datepickerDrake">
+    </article>
+    
       <article class="remove-item">
         <button  type= "button" class="remove-product">
         Delete
@@ -122,8 +132,8 @@
 
       </div>  
 
-      <article class="pay">
-        <a href="data.html" class="btn btn-pay">Purchase<span class="totals-value cart-total"></span></a>
+      <article class="pay" id="purchase">
+        <a class="btn btn-pay">Purchase<span class="totals-value cart-total"></span></a>
       </article>
 
   </section>
