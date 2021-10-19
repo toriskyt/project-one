@@ -46,26 +46,20 @@
   <section class="ticket-container item ">
 
       <article>
-        <h3>Ed Sheeran - General Admissions<br>
-        <small>Cost: $50.00/ea</small>
-        </h3>
+        <label>Enter Event Name</label>
+        <input class="form-control name-field" type="text" value=""><br>
+        <label>Enter Event Cost</label>
+        <input class="form-control cost-field" type="text" value="0.00"><br>
       </article>
-            
-      <div class="product-price" style= display:none;>50</div>
 
       <article class="pass-quantity">
-        <label for="pass-quantity" class="pass-quantity">Quantity</label>
-        <input class="form-control" type="number" value="1" min="1">
-      </article>
-
-      <article class="product-line-price">
-        <span class="product-line-price">$50.00
-        </span>
+        <label for="pass-quantity" class="pass-quantity">Number of Tickets</label>
+        <input class="form-control quantity-field" type="number" value="0." min="">
       </article>
 
       <article>
       <label for="event-day">Event Date:</label>
-      <input type="date" class= "form-control" id= "datepicker">
+      <input type="date" class= "form-control date-field">
       </article>
 
       <article class="remove-item">
@@ -79,20 +73,17 @@
   <section class="item ticket-container">
       <div>
 
-      <article>
-        <h3>Drake - General Admissions<br><small><small>Cost: $45.00/ea</small></small></h3>
-      </article>
-
-      <div class="product-price" style="display:none;">45.00</div>
-            
-      <article class="pass-quantity">
-        <label for="pass-quantity" class="pass-quantity">Quantity</label>
-        <input id="quantityDrake" class="form-control" type="number" value="1" min="1">
-      </article>
-
-      <article class="product-line-price">
-        <span class="product-line-price">45.00</span>
-      </article>
+        <article>
+          <label>Enter Event Name</label>
+          <input class="form-control name-field" type="text" value=""><br>
+          <label>Enter Event Cost</label>
+          <input class="form-control cost-field" type="text" value="0.00"><br>
+        </article>
+  
+        <article class="pass-quantity">
+          <label for="pass-quantity" class="pass-quantity">Number of Tickets</label>
+          <input class="form-control quantity-field" type="number" value="1" min="1">
+        </article>
 
       <article>
       <label for="event-day">Event Date:</label>
@@ -107,6 +98,35 @@
 
       </div>
   </section>
+
+  <section class="item ticket-container">
+    <div>
+
+      <article>
+        <label>Enter Event Name</label>
+        <input class="form-control name-field" type="text" value=""><br>
+        <label>Enter Event Cost</label>
+        <input class="form-control cost-field" type="text" value="0.00"><br>
+      </article>
+
+      <article class="pass-quantity">
+        <label for="pass-quantity" class="pass-quantity">Number of Tickets</label>
+        <input class="form-control quantity-field" type="number" value="1" min="1">
+      </article>
+
+    <article>
+    <label for="event-day">Event Date:</label>
+    <input type="date" class= "form-control" id= "datepickerDrake">
+  </article>
+  
+    <article class="remove-item">
+      <button  type= "button" class="remove-product">
+      Delete
+      </button>
+    </article>
+
+    </div>
+</section>
 
   <section class="totals">
       <div>
@@ -140,9 +160,9 @@
 </main><!-- container -->
 
 
-    
-<script src="assets/cartJS/cart2.js"></script>
+<script src="./assets/cartJS/cart.js"></script>    
+
    </body>
 
-  <footer>Project 1 Group</footer>
+  <footer>Project 1 Group Members: Talita Camargo, Syed Jamil, Yah'Mir McGee, Tracy Torisky</footer>
 </html>
