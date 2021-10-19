@@ -41,92 +41,11 @@
 
 
 
-<main class="cart-container content-section">
-
-  <section class="ticket-container item ">
-
-      <article>
-        <label>Enter Event Name</label>
-        <input class="form-control name-field" type="text" value=""><br>
-        <label>Enter Event Cost</label>
-        <input class="form-control cost-field" type="text" value="0.00"><br>
-      </article>
-
-      <article class="pass-quantity">
-        <label for="pass-quantity" class="pass-quantity">Number of Tickets</label>
-        <input class="form-control quantity-field" type="number" value="0." min="">
-      </article>
-
-      <article>
-      <label for="event-day">Event Date:</label>
-      <input type="date" class= "form-control date-field">
-      </article>
-
-      <article class="remove-item">
-        <button type= "button" class="remove-product">
-        Delete
-        </button>
-      </article>
-
-  </section>
-
-  <section class="item ticket-container">
-      <div>
-
-        <article>
-          <label>Enter Event Name</label>
-          <input class="form-control name-field" type="text" value=""><br>
-          <label>Enter Event Cost</label>
-          <input class="form-control cost-field" type="text" value="0.00"><br>
-        </article>
-  
-        <article class="pass-quantity">
-          <label for="pass-quantity" class="pass-quantity">Number of Tickets</label>
-          <input class="form-control quantity-field" type="number" value="1" min="1">
-        </article>
-
-      <article>
-      <label for="event-day">Event Date:</label>
-      <input type="date" class= "form-control" id= "datepickerDrake">
-    </article>
-    
-      <article class="remove-item">
-        <button  type= "button" class="remove-product">
-        Delete
-        </button>
-      </article>
-
-      </div>
-  </section>
-
-  <section class="item ticket-container">
-    <div>
-
-      <article>
-        <label>Enter Event Name</label>
-        <input class="form-control name-field" type="text" value=""><br>
-        <label>Enter Event Cost</label>
-        <input class="form-control cost-field" type="text" value="0.00"><br>
-      </article>
-
-      <article class="pass-quantity">
-        <label for="pass-quantity" class="pass-quantity">Number of Tickets</label>
-        <input class="form-control quantity-field" type="number" value="1" min="1">
-      </article>
-
-    <article>
-    <label for="event-day">Event Date:</label>
-    <input type="date" class= "form-control" id= "datepickerDrake">
-  </article>
-  
-    <article class="remove-item">
-      <button  type= "button" class="remove-product">
-      Delete
-      </button>
-    </article>
-
-    </div>
-</section>
+<main>
+<div  id = "cart" class="cart-container content-section">
+<!-- javascript tickets go here -->
+</div>
+ 
 
   <section class="totals">
       <div>
@@ -151,8 +70,11 @@
       </article>
 
       </div>  
-
+      
       <article class="pay" id="purchase">
+      <button id = "addTicket">Add a Ticket</button>
+
+     
         <a class="btn btn-pay">Purchase<span class="totals-value cart-total"></span></a>
       </article>
 

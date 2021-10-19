@@ -99,7 +99,7 @@ color: rgb(190, 187, 187);
 
 body {
   font-family: 'Nunito', sans-serif;
-  background-image: linear-gradient(to top , rgba(0, 0, 0, 0.075), rgba(111, 213, 231, 0.753)) ;
+  background-image: linear-gradient(to top , rgba(0, 0, 0, 0.466), rgba(0, 4, 5, 0.808)) ;
   font-size: 1rem;
   color: var(--light-color);
   line-height: 1.6;
