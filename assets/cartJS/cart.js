@@ -8,13 +8,11 @@ function newTicket() {
   ticketCon.setAttribute("class", "ticket-container item");
   cart.prepend(ticketCon);
 
-
-
+  
+  
   // event name section
   var eventNameArticle = document.createElement("article")
   eventNameArticle.setAttribute("class", "event-name");
-
-
   ticketCon.append(eventNameArticle);
   
   // number of tickets section
@@ -30,6 +28,9 @@ function newTicket() {
   var removeBtnArticle = document.createElement("article");
   removeBtnArticle.setAttribute("class", "remove-item");
   ticketCon.append(removeBtnArticle);
+
+  
+
 
 
   // event name label
@@ -92,10 +93,17 @@ function newTicket() {
     deleteBtn.setAttribute("type", "button");
     deleteBtn.setAttribute("class", "remove-item");
     deleteBtn.innerHTML= "Delete";
-    removeBtnArticle.append(deleteBtn);
+    removeBtnArticle.append(deleteBtn)
+
+
 }
 
 addTicket.addEventListener('click', newTicket);
+
+function removeItem () {
+var removeBtn = document.querySelector("section");
+removeBtn.remove();
+}
 
 
 
@@ -120,54 +128,7 @@ function addToCart (event){
     localStorage.setItem("events", JSON.stringify(events));
   }
 
-  renderMessage();
+  // renderMessage();
 
 }
 
-
-
-
-// });
-
-// function renderMessage() {
-//   var lastGrade = JSON.parse(localStorage.getItem("event"));
-//   if (lastGrade !== null) {
-//     document.querySelector(".message").textContent = lastGrade.student + 
-//     " received a/an " + lastGrade.grade
-//   }
-// }
-// 1. GET INSIDE LOCAL STORAGE AND SAV INTO EMPTY VAR ( AN ARRAY OF OBJECTS WHIXH IS YOUR TICKETS.)
-// 2.PUSH NEW TIOCKET TO ARRAY WITH OLD TICKETS. AFTER THAT, TAKE ARRAY AND SAVE INTO LOCAL STORAGE (THE ARRAY).
-
-
-// var ticket = document.querySelector("#purchase");
-// ticket.addEventListener('click', addToCart)
-// function addToCart (event){
-//   console.log("we got here")
-//   var date = document.querySelectorAll(".date-field");
-//   var numTickets = document.querySelectorAll(".quantity-field");
-//   var name = document.querySelectorAll(".name-field");
-//   var cost = document.querySelectorAll(".cost-field");
-
-//   for(var i = 0; i < name.length; i++) {
-//     var concert = {
-//       eventName: name[i].value,
-//       eventDate: date[i].value,
-//       valueNumTickets : numTickets[i].value.trim(),
-//       eventCost: cost[i].value,
-//     };
-//     var events = JSON.parse(localStorage.getItem("events"))||[];
-//     events.push(concert)
-//     localStorage.setItem("events", JSON.stringify(events));
-//   }
-
-
-  
-  
-//   renderMessage();
-
-  
-
-// // 
-
-// >>>>>>> main

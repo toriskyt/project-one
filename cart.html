@@ -22,15 +22,9 @@
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         </li>
         <li>
-          <a class= "iframe1">Family<iframe id="frame1" style="display: none;" width="1340" height="515"  text-align="center" src="family.html" frameborder="0" scrolling="auto"></iframe></a>
+          <a class= "iframe1">Events<iframe id="frame1" style="display: none;" width="1340" height="515"  text-align="center" src="cart.html" frameborder="0" scrolling="auto"></iframe></a>
         </li>
-        <li>
-          <a class= "iframe2">Concerts<iframe id="frame2" style="display: none;" width="1340" height="515" text-align="center" src="" frameborder="0" scrolling="auto"></iframe></a>
-        </li>
-        <li>
-          <a class= "iframe3">Sports<iframe id="frame3" style="display: none;" width="1340" height="515" text-align="center" src="" frameborder="0" scrolling="auto"></iframe></a>
-        </li>
-       
+    
       </ul>
     </nav>
       
@@ -44,10 +38,6 @@
 
 <main>
 <div  id = "cart" class="cart-container content-section">
-<!-- javascript tickets go here -->
-</div>
- 
-
 
   <section class="item ticket-container">
     <div>
@@ -66,17 +56,23 @@
 
     <article>
     <label for="event-day">Event Date:</label>
-    <input type="date" class= "form-control" id= "datepickerDrake">
+    <input type="date" class= "form-control date-field" id= "datepicker">
   </article>
   
     <article class="remove-item">
-      <button  type= "button" class="remove-product">
+      <button  onclick="removeItem()" type= "button" class="remove-product">
       Delete
       </button>
     </article>
 
     </div>
 </section>
+<!-- javascript tickets go here -->
+</div>
+ 
+
+
+  
 
   <section class="totals">
       <div>
@@ -106,7 +102,7 @@
       <button id = "addTicket">Add a Ticket</button>
 
      
-        <a class="btn btn-pay">Purchase<span class="totals-value cart-total"></span></a>
+        <a href="data.html" class="btn btn-pay">Purchase<span class="totals-value cart-total"></span></a>
       </article>
 
   </section>
