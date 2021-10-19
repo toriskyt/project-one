@@ -35,27 +35,32 @@
 // 2.PUSH NEW TIOCKET TO ARRAY WITH OLD TICKETS. AFTER THAT, TAKE ARRAY AND SAVE INTO LOCAL STORAGE (THE ARRAY).
 
 
+var ticket = document.querySelector("#purchase");
+ticket.addEventListener('click', addToCart)
+function addToCart (event){
+  console.log("we got here")
+  var date = document.querySelectorAll(".date-field");
+  var numTickets = document.querySelectorAll(".quantity-field");
+  var name = document.querySelectorAll(".name-field");
+  var cost = document.querySelectorAll(".cost-field");
 
-function addToCart () {
+  for(var i = 0; i < name.length; i++) {
+    var concert = {
+      eventName: name[i].value,
+      eventDate: date[i].value,
+      valueNumTickets : numTickets[i].value.trim(),
+      eventCost: cost[i].value,
+    };
+    var events = JSON.parse(localStorage.getItem("events"))||[];
+    events.push(concert)
+    localStorage.setItem("events", JSON.stringify(events));
+  }
 
-  var date = document.querySelector("#datepickerDrake");
-  var ticket = document.querySelector("#purchase");
-  var valueNumTickets = document.querySelector("#quantityDrake");
 
-  ticket.addEventListener('click', function(event) {
   
-  var concert = {
-    eventName: ticket.value,
-    eventDate: date.value,
-    valueNumTickets : numTickets.value.trim()
-  };
-
-  var events = JSON.parse(localStorage.getItem("events"))||[];
-  events.push(concert)
-  localStorage.setItem("events", JSON.stringify(events));
+  
   renderMessage();
-  
- });
+
   
 
 // 
