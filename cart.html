@@ -46,26 +46,18 @@
   <section class="ticket-container item ">
 
       <article>
-        <h3>Ed Sheeran - General Admissions<br>
-        <small>Cost: $50.00/ea</small>
-        </h3>
+        <input class="form-control name-field" type="text" value=""><br>
+        <input class="form-control cost-field" type="text" value="1.00"><br>
       </article>
-            
-      <div class="product-price" style= display:none;>50</div>
 
       <article class="pass-quantity">
         <label for="pass-quantity" class="pass-quantity">Quantity</label>
-        <input class="form-control" type="number" value="1" min="1">
-      </article>
-
-      <article class="product-line-price">
-        <span class="product-line-price">$50.00
-        </span>
+        <input class="form-control quantity-field" type="number" value="1" min="1">
       </article>
 
       <article>
       <label for="event-day">Event Date:</label>
-      <input type="date" class= "form-control" id= "datepicker">
+      <input type="date" class= "form-control date-field">
       </article>
 
       <article class="remove-item">
@@ -140,7 +132,7 @@
 </main><!-- container -->
 
 
-    
+<script src="./assets/cartJS/cart.js"></script>    
 <script src="assets/cartJS/cart2.js"></script>
    </body>
 
