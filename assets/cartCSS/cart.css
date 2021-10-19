@@ -220,6 +220,11 @@ section {
   box-shadow:1px 2px 6px;
 }
 
+
+input {
+  display: block;
+}
+
 .ticket-container {
   margin-bottom: 7px;
   margin-top: 7px;

@@ -8,13 +8,11 @@ function newTicket() {
   ticketCon.setAttribute("class", "ticket-container item");
   cart.prepend(ticketCon);
 
-
-
+  
+  
   // event name section
   var eventNameArticle = document.createElement("article")
   eventNameArticle.setAttribute("class", "event-name");
-
-
   ticketCon.append(eventNameArticle);
   
   // number of tickets section
@@ -30,6 +28,9 @@ function newTicket() {
   var removeBtnArticle = document.createElement("article");
   removeBtnArticle.setAttribute("class", "remove-item");
   ticketCon.append(removeBtnArticle);
+
+  
+
 
 
   // event name label
@@ -92,10 +93,17 @@ function newTicket() {
     deleteBtn.setAttribute("type", "button");
     deleteBtn.setAttribute("class", "remove-item");
     deleteBtn.innerHTML= "Delete";
-    removeBtnArticle.append(deleteBtn);
+    removeBtnArticle.append(deleteBtn)
+
+
 }
 
 addTicket.addEventListener('click', newTicket);
+
+function removeItem () {
+var removeBtn = document.querySelector("section");
+removeBtn.remove();
+}
 
 
 
