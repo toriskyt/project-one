@@ -7,11 +7,11 @@
     <meta charset="utf-8">
     <title>TixShare</title>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="assets/style.css">
     <link rel="icon" href="./assets/images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script  src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" ></script>
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
 
     
     
@@ -31,16 +31,10 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           </li>
           <li>
-            <a class= "iframe1">Family<iframe id="frame1" style="display: none;" width="1350" height="515" src="family.html" frameborder="0" scrolling="auto"></iframe></a>
+            <a class= "iframe1"><p text-align="center">Events</p><iframe id="frame1" style="display: none;" width="1340" height="515"   src="request.html" frameborder="0" scrolling="auto"></iframe></a>
           </li>
           <li>
-            <a class= "iframe2">Concerts<iframe id="frame2" style="display: none;" width="1330" height="515" src="" frameborder="0" scrolling="auto"></iframe></a>
-          </li>
-          <li>
-            <a class= "iframe3">Sports<iframe id="frame3" style="display: none;" width="1330" height="515" src="" frameborder="0" scrolling="auto"></iframe></a>
-          </li>
-          <li>
-            <a class= "iframe4">Cart<iframe id="frame4" style="display: none;" width="1330" height="515" src="cart.html" frameborder="0" scrolling="auto"></iframe></a>
+            <a class= "iframe4"><p text-align="center" >Cart</p><iframe id="frame4" style="display: none;" width="1340" height="515" src="cart.html" frameborder="0" scrolling="auto"></iframe></a>
           </li>
         </ul>
       </nav>
@@ -51,7 +45,7 @@
 
 <main>
 
-  <section>
+  <section class= "text-section">
         <h2>TixShare is a website dedicated to sharing oppportunities to experience all that Pittsburgh has to offer.</h2>
         <br>
         <p>Pittsburgh is known for it's great events - from concerts to sporting events to experiences for the whole family.</p>
@@ -71,8 +65,8 @@
   </section>
     
   <section class="mySlides fade">
-      <img src="assets/images/1513431313.jpeg" style= "width:60%" height="350">
-      <div class="text">Gun Show</div>
+      <img class=slide-img src="assets/images/Knoebels-Hallo-Fun-Sign_54_990x660.jpeg" style= "width:60%" height="350">
+      <div class="text">Halloween</div>
   </section>
     
   </section>
@@ -93,19 +87,32 @@
   </aside>
 </span>
 
+<span>
+  <aside>
+    <h2>Upcoming Holiday events in Pittsburgh</h2>
+    <button class = "holiday-button" id="modalButton"> Holiday Events</button>
+<div id="dialog" title="Upcoming Holiday Events"></div>
+  </aside>
+</span>
+
 <span class= "aside-section">
   <aside>
       <h2 class="cart">Check for available tickets here.</h2>
-      <a  href="./family.html" class="btn"><span>Tickets</span></a>
+      <a  href="/request.html" class="btn"><span> Request Tickets</span></a>
   </aside>
 </span>
-<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-177.09960937500003%2C10.228437266155955%2C-58.44726562500001%2C58.21702494960191&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=4/38.00/-117.77">View Larger Map</a></small>
-<p><a href="https://calendarific.com/api/v2/holidays?api_key=f4023e86e7bcf08b446daeeee7c4c8dcdc4897a8&country=US&year=2021">Check here for holiday events!</a></p>
+
+<br>
+<span>
+<iframe width="255" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-177.09960937500003%2C10.228437266155955%2C-58.44726562500001%2C58.21702494960191&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=4/38.00/-117.77">Check Events' Locations</a></small>
+</span>
+
+<br>
+
 <footer>Project 1 Group Members: Talita Camargo, Syed Jamil, Yah'Mir McGee, Tracy Torisky</footer>
-<div id="dialog" title="Basic dialog">
-  <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the &apos;x&apos; icon.</p>
-</div>
-<button id="modalButton"> Click Here for Holidays</button>
+
+  
+
 <script src="./assets/main.js"></script>
 </body>
 </html>  

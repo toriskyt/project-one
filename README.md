@@ -2,8 +2,7 @@ Project One Proposal:
 Talita Camargo, Yah’Mir McGee, Syed Jamil, Tracy Torisky
 
 **Deployed URL: 
-
-https://taliitacamargo.github.io/project-one/index.html
+Deployed page link: https://toriskyt.github.io/project-one/
 
 **Title:  TixShare**
 ![TixShare landing page](https://user-images.githubusercontent.com/88398240/137183354-fe696c67-79a6-4252-a9d7-634baf093e97.jpg)
@@ -34,3 +33,5 @@ Yah’Mir McGee/compilation of Pittsburgh events that can be listed on the websi
 
 For the first week we have a prototype of the template where individuals can donate tickets to the pool.  
 There is a list of upcoming events and a component to indicate how many tickets will be donated.  We will eventually be upgrading the component to allow visitors to input an event, the number of tickets donated, and the eventual database that can be viewed for requests.
+
+
