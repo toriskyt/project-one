@@ -161,7 +161,11 @@ footer {
   margin-top: 20px;
 }
 
-.kids-day:hover {
+a {
+  text-decoration: none;
+}
+
+a:hover {
   opacity: 80%
 }
 
@@ -204,6 +208,15 @@ button,
   margin: 5px;
 }
 
+.btn {
+  background-color: rgb(49, 78, 240);
+  color: white;
+  padding: 10px;
+  border-radius: 2px;
+  text-decoration: none;
+  margin: 5px;
+}
+
 .btn:hover {
   opacity: 80%;
 }
@@ -236,14 +249,7 @@ article {
   border-radius: 2px;
 }
 
-.btn {
-  background-color: rgb(49, 78, 240);
-  color: white;
-  padding: 10px;
-  border-radius: 2px;
-  text-decoration: none;
-  margin: 5px;
-}
+
 
 
 
