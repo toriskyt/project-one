@@ -1,6 +1,28 @@
+var numTickets = document.querySelectorAll(".quantity-field");
+var cost = document.querySelectorAll(".cost-field");
+var subtotal = 0;
+
+
+for (var i=0 ; i < numTickets.length; i++) {
+  console.log(numTickets[i].value);
+  console.log(cost[i].value);
+  subtotal = subtotal+parseFloat(numTickets[i].value)*parseFloat(cost[i].value);
+  var tax = 0.08;
+  var total = 0;
+  
+
+
+}
+
+
+
+console.log(subtotal);
+
 var addTicket = document.querySelector("#addTicket");
 var cart = document.querySelector("#cart");
  
+
+
 
 function newTicket() {
   // ticket section
@@ -126,6 +148,18 @@ function addToCart (event){
     localStorage.setItem("events", JSON.stringify(events));
   }
 
+
+  document.addEventListener('click', calculateTotal);
+
+  document.addEventListener('keyup', function (event) {
+    console.log(event.target);
+    console.log(event.target.matches("input"));
+    console.log(event.target.value);
+
+    if (event.target.matches("input")) {
+      calculateTotal();
+    }
+  });
   // renderMessage();
 
 }
