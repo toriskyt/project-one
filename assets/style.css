@@ -174,34 +174,33 @@ img {
 
 /* ____________ASIDE__________ */
 
-
 aside {
     width: 300px;
-
     padding: 10px;
     margin: 20px;
     background-color: lightgray;
-
     border-radius: 5px;
     box-shadow:1px 2px 6px;
     display: inline-block;
-    font-size: 10px;
 }
-
 
 
 /* _________EL'S USED ELSEWHERE_________  */
 
-a,
-button {
+ 
+a {
     text-decoration: none;
     color:rgb(190, 187, 187);
     font-weight: 700;
+    
 }
 
 button {
+  width: 95%;
   background-color: rgb(49, 78, 240);
     color: white;
+    font-weight: 700;
+    font-size: 16px;
     padding: 10px;
     border-radius: 2px;
     margin: 5px;
