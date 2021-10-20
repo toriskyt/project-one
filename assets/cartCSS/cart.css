@@ -142,7 +142,7 @@ header {
 
 
 body {
-  background-image: linear-gradient(to top , rgba(0, 0, 0, 0.075), rgba(111, 213, 231, 0.753)) ;
+  background-image: linear-gradient(to top , rgba(0, 0, 0, 0.356), rgba(17, 0, 175, 0.884));
     font-family: 'Nunito', sans-serif;
     font-size: 1rem;
     color: var(--light-color);
@@ -245,7 +245,7 @@ input {
 
 article {
   padding:10px;
-  background-color: rgb(207, 207, 207);
+  background-color: rgb(172, 172, 172);
   border-radius: 2px;
 }
 

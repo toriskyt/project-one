@@ -54,6 +54,7 @@ function newTicket() {
   ticketCon.append(removeBtnArticle);
 
   
+
   // event name label
   var nameLabel = document.createElement("label");
   nameLabel.setAttribute("for", "name-field");
@@ -129,9 +130,7 @@ removeBtn.remove();
 
 
 var ticket = document.querySelector("#purchase");
-
 ticket.addEventListener('click', addToCart)
-
 function addToCart (event){
   console.log("we got here")
   var date = document.querySelectorAll(".date-field");
@@ -149,31 +148,9 @@ function addToCart (event){
     var events = JSON.parse(localStorage.getItem("events"))||[];
     events.push(concert)
     localStorage.setItem("events", JSON.stringify(events));
-
-    // var addItem = function (eventCost, valueNumTickets) {
-    //   var currentTotal =  localStorage.getItem(eventCost);
-    //   if(currentTotal)
-    //   currentTotal = parseFloat(currentTotal) + (parseFloat(eventCost) *
-    //   parseFloat(valueNumTickets));
-    //   else
-    //   currentTotal = parseFloat(eventCost) * parseFloat(valueNumTickets);
-    //   localStorage.setItem(eventCost, currentTotal);
-    // };
-    // addItem(eventCost, valueNumTickets);
-    // }
-
   }
+
+  // renderMessage();
+
 }
-
-var  requestTicket = document.querySelector(".request-ticket");
-
-
-
-function getStorageItem () {
-  var events = JSON.parse(localStorage.getItem(events))||[];
-  document.getElementById('qty').value = events;
-  
-}
-
-requestTicket.addEventListener('click', getStorageItem)
 
