@@ -1,22 +1,70 @@
-var numTickets = document.querySelectorAll(".quantity-field");
-var cost = document.querySelectorAll(".cost-field");
-var subtotal = 0;
+// <<<<<<< Talita
+// var numTickets = document.querySelectorAll(".quantity-field");
+// var cost = document.querySelectorAll(".cost-field");
+// var subtotal = 0;
 
 
-for (var i=0 ; i < numTickets.length; i++) {
-  console.log(numTickets[i].value);
-  console.log(cost[i].value);
-  subtotal = subtotal+parseFloat(numTickets[i].value)*parseFloat(cost[i].value);
-  var tax = 0.08;
-  var total = 0;
+// for (var i=0 ; i < numTickets.length; i++) {
+//   console.log(numTickets[i].value);
+//   console.log(cost[i].value);
+//   subtotal = subtotal+parseFloat(numTickets[i].value)*parseFloat(cost[i].value);
+//   var tax = 0.08;
+//   var total = 0;
   
 
 
+// }
+
+
+
+// console.log(subtotal);
+
+
+function calculateTotal() {
+// As the user, I want the quantity multiplied by the number of tickets (subtotal).
+var numTickets = document.querySelectorAll(".quantity-field");
+var cost = document.querySelectorAll(".cost-field");
+
+var subtotal = 0;
+for(var i=0;i<numTickets.length; i++) {
+
+  console.log(numTickets[i].value);
+  console.log(cost[i].value);
+  subtotal= subtotal+parseFloat(numTickets[i].value)*parseFloat(cost[i].value);
+  
+  }
+  console.log(subtotal);
+  var tax =.08;
+  var total = subtotal*tax;
+  console.log(total);
+  var totaldiv = document.querySelector(".totals-value") 
+  totaldiv.innerHTML=total
+// As the user, I want the subtotal include what's in the cart. 
+// The cart is a list of items that the user wants.
+
+  // // assign each value by id 
+  // var item = [Number(document.getElementById('50.00').value),
+  //   ,
+  // Number(document.getElementById('45.00').value)];
+  // // Multiply each input and add it to the value
+  // var subTotal = [document.getElementById('50.00').value * 50,
+  //   ,
+  // document.getElementById('45.00').value * 45];
+  // // declare 
+  // var totalDue = 0;
+  // // loop through each item and add to the list item 
+  // for (var i = 0; i < item.length; i++) {
+  //   countItem += item[i];
+  // }
+  // // get total by call each item from the list
+  // for (var j = 0; j < subTotal.length; j++) {
+  //   totalDue += total[j];
+  // }
+
+  document.getElementById('cart-subtotal').innerHTML = "Item Total: $" + subtotal.toFixed(2);
+
 }
 
-
-
-console.log(subtotal);
 
 var addTicket = document.querySelector("#addTicket");
 var cart = document.querySelector("#cart");
@@ -148,19 +196,16 @@ function addToCart (event){
     localStorage.setItem("events", JSON.stringify(events));
   }
 
-
-  document.addEventListener('click', calculateTotal);
-
-  document.addEventListener('keyup', function (event) {
-    console.log(event.target);
-    console.log(event.target.matches("input"));
-    console.log(event.target.value);
-
-    if (event.target.matches("input")) {
-      calculateTotal();
-    }
-  });
-  // renderMessage();
-
 }
 
+//addEventListener for click and button press
+document.addEventListener('click', calculateTotal);
+document.addEventListener('keyup', function(event){
+  console.log(event.target)
+  console.log(event.target.matches("input"))
+  console.log(event.target.value)
+  if(event.target.matches("input")){
+    calculateTotal()
+
+  }
+}) 
