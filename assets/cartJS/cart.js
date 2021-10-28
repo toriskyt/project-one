@@ -1,3 +1,25 @@
+// <<<<<<< Talita
+// var numTickets = document.querySelectorAll(".quantity-field");
+// var cost = document.querySelectorAll(".cost-field");
+// var subtotal = 0;
+
+
+// for (var i=0 ; i < numTickets.length; i++) {
+//   console.log(numTickets[i].value);
+//   console.log(cost[i].value);
+//   subtotal = subtotal+parseFloat(numTickets[i].value)*parseFloat(cost[i].value);
+//   var tax = 0.08;
+//   var total = 0;
+  
+
+
+// }
+
+
+
+// console.log(subtotal);
+
+
 function calculateTotal() {
 // As the user, I want the quantity multiplied by the number of tickets (subtotal).
 var numTickets = document.querySelectorAll(".quantity-field");
@@ -43,9 +65,12 @@ for(var i=0;i<numTickets.length; i++) {
 
 }
 
+
 var addTicket = document.querySelector("#addTicket");
 var cart = document.querySelector("#cart");
  
+
+
 
 function newTicket() {
   // ticket section
@@ -170,8 +195,6 @@ function addToCart (event){
     events.push(concert)
     localStorage.setItem("events", JSON.stringify(events));
   }
-
-  
 
 }
 
