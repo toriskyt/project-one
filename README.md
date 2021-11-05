@@ -5,7 +5,9 @@ Talita Camargo, Yah’Mir McGee, Syed Jamil, Tracy Torisky
 Deployed page link: https://toriskyt.github.io/project-one/
 
 **Title:  TixShare**
-![TixShare landing page](https://user-images.githubusercontent.com/88398240/137183354-fe696c67-79a6-4252-a9d7-634baf093e97.jpg)
+![TixShare](https://user-images.githubusercontent.com/88398240/138158505-97406e2a-c8d1-495d-b5b5-ee6da0c93757.jpg)
+
+
 
 **Description (1 paragraph):**
 

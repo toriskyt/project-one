@@ -370,3 +370,9 @@ button {
     }
 }
 
+#modalButton:hover {
+  background-color:blue;
+  color:white;
+  
+
+}
