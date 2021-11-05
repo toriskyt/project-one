@@ -3,7 +3,6 @@
 box-sizing: border-box;
 margin: 0;
 padding:0;
-
 }
 
 /* _______________HEADER STYLING___________ */
@@ -290,7 +289,8 @@ button {
 
     .my-logo {
         height: 70px;
-        width: 70px;
+        width: 60px;
+        padding-bottom: 30px;
         
     }
 
@@ -306,19 +306,14 @@ button {
       object-fit: cover;
       }
 
-      .dot {
-        
-      }
   
 }
 
+
+
 @media screen and (max-width: 768px) {
 
-    
-  header {
-      flex-direction: column;
-  }
-  
+
   .nav-content {
       display: flex;
       justify-content: center;
@@ -326,9 +321,11 @@ button {
   }
 
   .my-logo {
-      height: 50px;
-      width: 50px;
-      
+    display: flex;
+    justify-content: flex-start;
+    height: 55px;
+    width: 50px;
+    padding-bottom: 20px;
   }
 
   main {

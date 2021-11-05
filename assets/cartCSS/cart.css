@@ -258,23 +258,30 @@ article {
 
 
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
   header {
     flex-direction: column;
 }
-.nav-content{
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  margin-left: 80px;
+
+.nav-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
+
 .my-logo {
-  height: 70px;
-  width: 70px;
+  display: flex;
+  justify-content: flex-start;
+  height: 55px;
+  width: 50px;
+  padding-bottom: 20px;
 }
 
 
+
 }
+
+
 @keyframes rainbow-text-simple-animation-rev {
   0% {
       background-size: 650%;
